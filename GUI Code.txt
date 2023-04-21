@@ -1,0 +1,17 @@
+Vptr = VideoReader('E:\SS584_Video_Quality\SS584-Video-Quality\Ref-videos\Video001.mp4');
+    Vptr1 = VideoReader('E:\SS584_Video_Quality\SS584-Video-Quality\M1-Videos\Video001M1001.ts');
+    Nrows = Vptr.height;
+    Ncols = Vptr.width;
+    f1 = read(Vptr,[25*46 25*46+2000]);
+    f2 = read(Vptr1,[100 2117]);
+    co=0;
+    startFrame=25*46;
+    endFrame=25*46+2000;
+    for i=1:25:2002 
+   
+        co=co+1;
+        [mssim, ssim_map] = ssim(f1(:,:,:,i),f2(:,:,:,i+16)); 
+        SSIM(co,1)=mssim;    
+    end
+    SSIM=mean(SSIM);
+    app.EditField.Value = num2str(SSIM);

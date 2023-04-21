@@ -1,0 +1,12 @@
+data compression
+- lossless
+	- zip
+- lossy
+	- video
+
+- video quality
+	- sub - mos
+	- obj - psnr, ssim, vmaf
+- ref, reduced ref, no-ref
+
+https://github.com/vztu/BVQA_Benchmark

@@ -1,0 +1,2 @@
+RefVideo,captureVideo,startFrame,endFrame,MAE,SSIM
+Video001.mp4,Video001M1001.ts,1150,3150,5.4260361328125,0.912936904341404

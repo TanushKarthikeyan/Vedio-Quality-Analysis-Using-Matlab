@@ -1,0 +1,4 @@
+refVideo,captureVideo,startFrame,endFrame,avgSSIM,VQM,AbsoluteError
+Video001.mp4,Video001M7001.ts,135,884,0.988831,0.854678,0.134153
+Video001.mp4,Video001M7001.ts,885,1634,0.989215,0.997932,0.008717
+Video001.mp4,Video001M7001.ts,1635,2384,0.985285,0.879654,0.105631
